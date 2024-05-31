@@ -13,7 +13,8 @@ export const Pedido = () => {
 
   const loadingPhrases = [
     "Carregando...",
-    "Aguarde um momento...",
+    "Testando sua paciência...",
+    "Tem que ter paciência comigo heim...",
     "Quase lá...",
   ];
 
