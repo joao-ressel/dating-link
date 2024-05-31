@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Para alinhar verticalmente o conteúdo */
+    flex-direction: column; 
+    overflow: hidden;
 }
 #parteUm {
     width: 400px;
@@ -25,9 +26,11 @@
     font-size: 14px;
 }
 
-.title-bar .close-btn {
+.title-bar .close-btn a{
     font-weight: bold;
     cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
 }
 
 .hearth-img img {
@@ -94,6 +97,24 @@ button:active, .Talvez:active {
 .window-content {
     padding: 20px;
 }
+
+/* Add styles for the icon in the window */
+.icon-window {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px; /* Add space between the icon and text */
+  }
+  
+  /* Add styles for the error icon */
+  .window.error .icon-window {
+    content: url("../assets/error-icon.png"); /* Specify the path to the error icon */
+  }
+  
+  /* Add styles for the attention icon */
+  .window.attention .icon-window {
+    content: url("../assets/atention-icon.png"); /* Specify the path to the attention icon */
+  }
+  
 
 .hidden {
     display: none;
@@ -169,3 +190,24 @@ button:active, .Talvez:active {
     margin-top: 10px;
 }
 
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 600px) {
+    .containerPedido{
+        width: 90%;
+        overflow: hidden;
+    }
+    #parteUm {
+        width: 250px;
+    }
+    .window {
+      width: 260px;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+    }
+  
+    .window-content {
+      padding: 10px; 
+    }
+  }

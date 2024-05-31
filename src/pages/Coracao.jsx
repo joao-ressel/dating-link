@@ -62,65 +62,65 @@ export const Coracao = () => {
     <div className="content" ref={contentRef}>
       <div className="card-wrapper" ref={cardWrapperRef}>
         <div className="card" onClick={handleCardClick}>
-          <div class="side side-a">
-            <div class="back">
-              <div class="heart">
-                <div class="heart-half">
-                  <div class="circle"></div>
-                  <div class="rect"></div>
+          <div className="side side-a">
+            <div className="back">
+              <div className="heart">
+                <div className="heart-half">
+                  <div className="circle"></div>
+                  <div className="rect"></div>
                 </div>
-                <pre class="ijustcode">
-                  <code class="language-javascript">
-                    &nbsp;&nbsp;console.log( &nbsp;&nbsp;&nbsp;&nbsp;'I Love You
-                    Dabbu 💕❤️💕😘' &nbsp;&nbsp;);
+                <pre className="ijustcode">
+                  <code className="language-javascript">
+                    &nbsp;&nbsp;console.log( &nbsp;&nbsp;&nbsp;&nbsp;'João e
+                    Isis tão namorando 💕❤️💕😘' &nbsp;&nbsp;);
                   </code>
                 </pre>
               </div>
             </div>
-            <div class="front">
-              <div class="heart">
-                <div class="heart-half">
-                  <div class="circle"></div>
-                  <div class="rect"></div>
+            <div className="front">
+              <div className="heart">
+                <div className="heart-half">
+                  <div className="circle"></div>
+                  <div className="rect"></div>
                 </div>
-                <pre class="ijustcode">
-                  <code class="language-javascript">
-                    &nbsp;&nbsp;console.log( &nbsp;&nbsp;&nbsp;&nbsp;'I Love You
-                    Dabbu 💕❤️💕😘' &nbsp;&nbsp;);
+                <pre className="ijustcode">
+                  <code className="language-javascript">
+                    &nbsp;&nbsp;console.log( &nbsp;&nbsp;&nbsp;&nbsp;'João e
+                    Isis tão namorando 💕❤️💕😘' &nbsp;&nbsp;);
                   </code>
                 </pre>
               </div>
             </div>
           </div>
-          <div class="side side-b">
-            <div class="back">
-              <div class="heart">
-                <div class="heart-half">
-                  <div class="circle"></div>
-                  <div class="rect"></div>
+          <div className="side side-b">
+            <div className="back">
+              <div className="heart">
+                <div className="heart-half">
+                  <div className="circle"></div>
+                  <div className="rect"></div>
                 </div>
-                <pre class="ijustcode">
-                  <code class="language-javascript">
-                    &nbsp;&nbsp;console.log( &nbsp;&nbsp;&nbsp;&nbsp;'I Love You
-                    Dabbu 💕❤️💕😘' &nbsp;&nbsp;);
+                <pre className="ijustcode">
+                  <code className="language-javascript">
+                    &nbsp;&nbsp;console.log( &nbsp;&nbsp;&nbsp;&nbsp;'João e
+                    Isis tão namorando 💕❤️💕😘' &nbsp;&nbsp;);
                   </code>
                 </pre>
-                <div class="title">Click me</div>
+                <div className="title">Click me</div>
               </div>
             </div>
-            <div class="front">
-              <div class="heart">
-                <div class="heart-half">
-                  <div class="circle"></div>
-                  <div class="rect"></div>
+            <div className="front">
+              <div className="heart">
+                <div className="heart-half">
+                  <div className="circle"></div>
+                  <div className="rect"></div>
                 </div>
-                <pre class="ijustcode">
-                  <code class="language-javascript">
-                    &nbsp;&nbsp;console.log( &nbsp;&nbsp;&nbsp;&nbsp;'I Love You
-                    Dabbu 💕❤️💕😘 ' &nbsp;&nbsp;);
+                <pre className="ijustcode">
+                  <code className="language-javascript">
+                    &nbsp;&nbsp;console.log( &nbsp;&nbsp;&nbsp;&nbsp;'João e
+                    Isis tão namorando 💕❤️💕😘' &nbsp;&nbsp;);
                   </code>
                 </pre>
-                <div class="title">Click me</div>
+                <div className="title">Abrir coração</div>
               </div>
             </div>
           </div>

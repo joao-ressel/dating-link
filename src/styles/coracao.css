@@ -113,7 +113,7 @@
 }
 
 .heart {
-  font-family: "Satisfy", cursive !important;
+  font-family: "MS Sans Serif", Arial, sans-serif !important;
   transform: rotate(0);
 }
 .heart .heart-half {
@@ -137,7 +137,6 @@
 .heart .title {
   position: absolute;
   top: 40%;
-  font-family: "Quicksand", sans-serif;
   right: 10%;
   font-size: 38px;
   transform: rotate(45deg);
@@ -255,4 +254,45 @@ audio {
   z-index: -2;
   opacity: 0;
   transition: opacity 1s cubic-bezier(0, 0, 0, 0.94);
+}
+
+@media only screen and (max-width: 600px) {
+  .card-wrapper {
+    width: 320px;
+    margin: auto;
+  }
+  .card{
+    left: -20px;
+  }
+  .card-wrapper .card {
+    width: 160px;
+    height: 300.8888888889px;
+    transform: perspective(1000px) translate(80%) scale(0.5) rotateY(0deg);
+  }
+  .heart .heart-half .circle {
+    width: 160px;
+    height: 160px;
+  }
+  .heart .heart-half .rect {
+    width: 140px;
+    height: 160px;
+    margin-top: -70px;
+  }
+ 
+  .ijustcode {
+    font-size: 0.8rem;
+  }
+
+  .ijustcode {
+    top: 130px;
+    right: 0;
+    height: auto;
+    
+    backface-visibility: hidden;
+    font-size: 0.6rem;
+  }
+  .heart .title {
+    font-size: 1rem;
+    top: 160px;
+  }
 }
