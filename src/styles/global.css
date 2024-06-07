@@ -42,15 +42,15 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+#root{
+    width: 100%;
+}
 body {
     font-family: 'MS Sans Serif', Arial, sans-serif;
     background: #018685 url('../assets/idy-os.png') right top no-repeat;
     color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 100vh;
-    margin: 0;
     width: 100%;
 }

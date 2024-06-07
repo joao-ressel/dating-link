@@ -11,13 +11,13 @@ function App() {
       {" "}
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/pedido" element={<Pedido />} />
           <Route path="/mensagem" element={<Mensagem />} />
           <Route path="/coracao" element={<Coracao />} />
         </Routes>
+        <BarraTarefas />
       </Router>
-      <BarraTarefas />
     </>
   );
 }
