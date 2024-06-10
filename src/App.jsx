@@ -1,24 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Mensagem } from "./pages/Mensagem";
-import { Coracao } from "./pages/Coracao";
-import { Pedido } from "./pages/Pedido";
+
 import { Home } from "./pages/Home";
-import { BarraTarefas } from "./components/BarraTarefas/BarraTarefas";
-import {Galeria} from "./pages/Galeria";
+import { Heart } from "./pages/Heart";
+import { Message } from "./pages/Message";
+import { Gallery } from "./pages/Gallery";
+import { Request } from "./pages/Request";
+import { Taskbar } from "./components/TaskBar";
 
 function App() {
   return (
     <>
-      {" "}
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/pedido" element={<Pedido />} />
-          <Route path="/mensagem" element={<Mensagem />} />
-          <Route path="/coracao" element={<Coracao />} />
-          <Route path="/galeria" element={<Galeria/>} />
+          <Route path="/request" element={<Request />} />
+          <Route path="/message" element={<Message />} />
+          <Route path="/heart" element={<Heart />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
-        <BarraTarefas />
+        <Taskbar />
       </Router>
     </>
   );

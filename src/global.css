@@ -1,3 +1,4 @@
+/* RESET  */
 html,
 body,
 div,
@@ -122,12 +123,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* GLOBAL STYLES */
 #root {
   width: 100%;
 }
+
 body {
   font-family: "MS Sans Serif", Arial, sans-serif;
-  background: #018685 url("../assets/idy-os.png") right top no-repeat;
+  background: #018685 url("./assets/idy-os.png") right top no-repeat;
   color: black;
   display: flex;
   justify-content: center;
@@ -135,9 +139,3 @@ body {
   height: 100vh;
   width: 100%;
 }
-
-/* @media (max-width: 768px) {
-  body {
-    background: #018685 url("../assets/idy-os.png") right  no-repeat;
-  }
-} */
