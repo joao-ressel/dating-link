@@ -1,4 +1,4 @@
-<div align="center"><img src="https://github.com/joao-ressel/dating-link/blob/main/src/assets/heart.png" alt="Logo Idy OS Program"/><h1> Idy OS Program </h1></div> 
+<div align="center" ><img width="50" src="https://github.com/joao-ressel/dating-link/blob/main/src/assets/heart.png" alt="Logo Idy OS Program"/><h1> Idy OS Program </h1></div> 
 
 <p align="center">
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/>
