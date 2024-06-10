@@ -1,10 +1,11 @@
-import { useEffect, useRef, useState } from "react";
-import "../styles/coracao.css";
 import hljs from "highlight.js";
-import "highlight.js/styles/default.css";
 import confetti from "canvas-confetti";
+import "highlight.js/styles/default.css";
+import { useEffect, useRef, useState } from "react";
 
-export const Coracao = () => {
+import "./heart.css";
+
+export const Heart = () => {
   const cardWrapperRef = useRef(null);
   const contentRef = useRef(null);
   const gradientRef = useRef(null);
@@ -30,7 +31,7 @@ export const Coracao = () => {
         cardWrapper.classList.add("active");
         gradientElement.style.opacity = 1;
         launchConfetti();
-      }, 1000); // Delay de 1 segundo para adicionar a classe active após o coração abrir completamente
+      }, 1000);
     }
   };
 

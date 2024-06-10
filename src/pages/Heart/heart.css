@@ -12,20 +12,23 @@
   position: relative;
   width: 280px;
   height: 497.7777777778px;
-  transform: perspective(1000px) translate(50%) scale(0.5) rotateY(0deg);
+
   transform-origin: 50px center;
   transition: 1s cubic-bezier(0, 0, 0, 0.94);
+  transform: perspective(1000px) translate(50%) scale(0.5) rotateY(0deg);
 }
 .card-wrapper .card .side {
   background: transparent;
   position: absolute;
+
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  transform: perspective(1000px) rotateY(0);
-  transform-origin: right center;
+
   transform-style: preserve-3d;
+  transform-origin: right center;
+  transform: perspective(1000px) rotateY(0);
   transition: 1s cubic-bezier(0, 0, 0, 0.94);
 }
 .card-wrapper .card .side.side-a {
@@ -41,9 +44,10 @@
   left: 0;
   right: 0;
   bottom: 0;
+
+  overflow: hidden;
   backface-visibility: hidden;
   transition: 0 0.5s cubic-bezier(0, 0, 0, 0.94);
-  overflow: hidden;
 }
 .card-wrapper .card .side .front {
   z-index: 2;
@@ -91,35 +95,43 @@
 .card-wrapper .card .side.side-b .front .heart .rect {
   background: #f9bec7;
 }
+
 .card-wrapper .card .side.side-b .back .heart .title {
   display: none;
 }
+
 .card-wrapper.active .card {
   transform: perspective(1000px) translate(0%) scale(1) rotateY(0);
 }
+
 .card-wrapper.active .card .side.side-b {
   transform: perspective(1000px) rotateY(180deg);
 }
+
 .card-wrapper.active .card .side-a .front .heart .circle,
 .card-wrapper.active .card .side-a .front .heart .rect {
   background: #b60a3a !important;
 }
+
 .card-wrapper.active .card .side-b .back .heart .circle,
 .card-wrapper.active .card .side-b .back .heart .rect {
   background: #b60a3a !important;
 }
+
 .card-wrapper:not(.active) .heart {
   cursor: pointer;
 }
 
 .heart {
-  font-family: "MS Sans Serif", Arial, sans-serif !important;
+  font-family: "Satisfy", cursive !important;
   transform: rotate(0);
 }
+
 .heart .heart-half {
   transform: rotate(-45deg) scale(0.8) translateX(23%) translateY(10%);
   transform-origin: 140px 140px;
 }
+
 .heart .heart-half .circle {
   width: 280px;
   height: 280px;
@@ -127,6 +139,7 @@
   border-radius: 50%;
   transition: background 1s cubic-bezier(0, 0, 0, 0.94);
 }
+
 .heart .heart-half .rect {
   width: 280px;
   height: 280px;
@@ -134,9 +147,11 @@
   margin-top: -140px;
   transition: background 1s cubic-bezier(0, 0, 0, 0.94);
 }
+
 .heart .title {
   position: absolute;
   top: 40%;
+  font-family: "Quicksand", sans-serif;
   right: 10%;
   font-size: 38px;
   transform: rotate(45deg);
@@ -156,6 +171,7 @@
 .side-b .ijustcode code {
   transform: rotateY(-180deg);
 }
+
 .side-b .front .ijustcode {
   display: none;
 }
@@ -173,19 +189,10 @@ pre code.hljs {
   border-radius: 10px;
 }
 
-audio {
-  display: none;
-  position: absolute;
-  width: 0px;
-}
-
 /*******
-  ********
-  
   Confeti styles
-  
-  ********
   *******/
+
 @keyframes confetti-slow {
   0% {
     transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
@@ -215,16 +222,19 @@ audio {
   perspective: 700px;
   position: absolute;
   overflow: hidden;
+
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
   z-index: -1;
 }
 
 .confetti {
   position: absolute;
   z-index: 1;
+
   top: -10px;
   border-radius: 0%;
 }
@@ -240,59 +250,22 @@ audio {
 .confetti-animation-fast {
   animation: confetti-fast 1.5s linear 1 forwards;
 }
+
 .heart {
   top: 0;
 }
+
 #gradient {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+
   width: 100vw;
   height: 100vh;
+
   z-index: -2;
   opacity: 0;
   transition: opacity 1s cubic-bezier(0, 0, 0, 0.94);
-}
-
-@media only screen and (max-width: 600px) {
-  .card-wrapper {
-    width: 320px;
-    margin: auto;
-  }
-  .card{
-    left: -20px;
-  }
-  .card-wrapper .card {
-    width: 160px;
-    height: 300.8888888889px;
-    transform: perspective(1000px) translate(80%) scale(0.5) rotateY(0deg);
-  }
-  .heart .heart-half .circle {
-    width: 160px;
-    height: 160px;
-  }
-  .heart .heart-half .rect {
-    width: 140px;
-    height: 160px;
-    margin-top: -70px;
-  }
- 
-  .ijustcode {
-    font-size: 0.8rem;
-  }
-
-  .ijustcode {
-    top: 130px;
-    right: 0;
-    height: auto;
-    
-    backface-visibility: hidden;
-    font-size: 0.6rem;
-  }
-  .heart .title {
-    font-size: 1rem;
-    top: 160px;
-  }
 }
