@@ -1,7 +1,7 @@
-import "../styles/mensagem.css";
+import "./message.css";
 import { useEffect, useState } from "react";
 
-export const Mensagem = () => {
+export const Message = () => {
   const [i, setI] = useState(0);
   const txt1 =
     "Oi, Meu Amor.....!  <<               Quero dizer algo especial para você... < sou ruim com as palavras, < mas vou tentar.  <<<                Por favor, leia com atenção...!                                                                            > A Internet nos juntou e rapidamente você < foi me conquistando. Conseguiu fazer < com que me sentisse à vontade e feliz < no mesmo dia em que te conheci. < Muito obrigado por isso!   >>                  Você mexe com meu coração < de um modo que não consigo explicar, < sinto que você é realmente especial....! <<                           Ainda estamos nos conhecendo, < mas tudo que vejo em você é < uma alma que complementa na perfeição < meu coração.                                                     > E já que gosta de sertanejo, < olha esse trechinho...! <<                      << Por que te amo eu não sei... < Mas quero te amar cada vez mais. < O que na vida ninguém fez... < Você fez em menos de mês.                                                   >                                                          >Te love < Minha princesa linda.....! |                  << Espero ter achance de ter amar < por muuuuito tempo...! < Beijooosss <<< Para voltar,clique no 'Start' aqui embaixo";
