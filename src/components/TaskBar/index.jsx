@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import StartIcon from "../../assets/start-menu-button.png"; // Importe o ícone do botão iniciar
-import "./styles.css"; // Importe o arquivo de estilos CSS da barra de tarefas
+import StartIcon from "../../assets/start-menu-button.png"; 
+import "./styles.css"; 
 
-export const BarraTarefas = () => {
+export const Taskbar = () => {
   return (
     <div className="taskbar">
       <NavLink to="/">
